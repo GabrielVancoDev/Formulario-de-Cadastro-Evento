@@ -77,3 +77,36 @@ body {
 
 /* Página de Listagem */
 
+.lista-container {
+  background-color: rgba(0, 0, 0, 0.8); /*Fundo semi transparente*/
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00f0ff, 0 0 25 px #00f0ff; /*Borda brilhosa*/
+  width: 350px;
+  color: #fff;
+}
+
+.dado {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #0ff;
+  border-radius: 8px;
+}
+
+.dado p {
+  margin: 5px 0;
+}
+
+.voltar {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+.voltar:hover {
+  text-decoration: underline;
+}
