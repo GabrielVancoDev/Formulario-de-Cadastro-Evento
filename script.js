@@ -11,4 +11,18 @@ function validarFormulario(event) {
     alert("Por favor, preencha todos os campos.");
     return;
   }
+
+  if(!termos) {
+    alert("Por favor, aceite os termos e condições.");
+    return;
+}
+
+
+const dados = {nome, email, telefone}; 
+
+localStorage.setItem("cadastroEvento", JSON.stringify(dados));
+
+alert("Cadastro realizado com sucesso!");
+
+document.querySelector("form").reset();
 }
