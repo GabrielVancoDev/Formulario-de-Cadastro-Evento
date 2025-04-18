@@ -25,4 +25,6 @@ localStorage.setItem("cadastroEvento", JSON.stringify(dados));
 alert("Cadastro realizado com sucesso!");
 
 document.querySelector("form").reset();
+
+console.log(dados);
 }
