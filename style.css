@@ -110,3 +110,37 @@ body {
 .voltar:hover {
   text-decoration: underline;
 }
+
+/* Tela de confirmação de Inscrição */
+
+.confirmacao-container {
+  background-color: rgba(0, 0, 0, 0.8); /*Fundo semi transparente*/
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00f0ff, 0 0 25 px #00f0ff; /*Borda brilhosa*/
+  width: 350px;
+  color: #fff;
+}
+
+.confirmacao-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirmacao-container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirmacao-container a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+.confirmacao-container a:hover {
+  text-decoration: #00cccc;
+}

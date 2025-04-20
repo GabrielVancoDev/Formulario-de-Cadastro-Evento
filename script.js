@@ -1,4 +1,6 @@
-document.getElementById("formulario").addEventListener("submit", validarFormulario);
+document
+  .getElementById("formulario")
+  .addEventListener("submit", validarFormulario);
 
 function validarFormulario(event) {
   event.preventDefault();
@@ -12,19 +14,19 @@ function validarFormulario(event) {
     return;
   }
 
-  if(!termos) {
+  if (!termos) {
     alert("Por favor, aceite os termos e condições.");
     return;
-}
+  }
 
+  const dados = { nome, email, telefone };
 
-const dados = {nome, email, telefone}; 
+  localStorage.setItem("cadastroEvento", JSON.stringify(dados));
 
-localStorage.setItem("cadastroEvento", JSON.stringify(dados));
+  alert("Cadastro realizado com sucesso!");
+  window.location.href = "confirmarCadastro.html";
 
-alert("Cadastro realizado com sucesso!");
+  document.querySelector("form").reset();
 
-document.querySelector("form").reset();
-
-console.log(dados);
+  console.log(dados);
 }
